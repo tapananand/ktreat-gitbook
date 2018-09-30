@@ -1,4 +1,4 @@
 # Table of contents
 
-* [Home](README.md)
+* [Welcome to Ktreat](README.md)
 
