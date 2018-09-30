@@ -14,3 +14,5 @@ My areas of interest include:
 1. JavaScript and everything revolving around it.
 2. Web Security
 3. Machine Learning (well I am warming up to it...)
+
+The content here is derived from tutorials, articles, videos, docs, projects, courses, etc that I go through throughout my time. So, the content may or may not be completely mine. I will try to give attributions at places, but if I miss it, please don't hold it against me and try reminding me of it politely first.
