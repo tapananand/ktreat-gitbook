@@ -6,16 +6,15 @@ Created and sent by the server and then used for further communication by adding
 Has three parts: `xxxxx.yyyyy.zzzzz`
 
 ```
-    xxxxx = base64Encoded Header
-    yyyyy = base64Encoded Data
-    zzzzz = Hash of xxxxx.yyyyy with a secret string used to sign this hash
+xxxxx = base64Encoded Header
+yyyyy = base64Encoded Data
+zzzzz = Hash of xxxxx.yyyyy with a secret string used to sign this hash
 ```
 
 For example, 
 
-```
-        eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.XbPfbIHMI6arZ3Y922BhjWgQzWXcXNrz0ogtVhfEd2o
-```
+
+`eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.XbPfbIHMI6arZ3Y922BhjWgQzWXcXNrz0ogtVhfEd2o`
 
 The above has:
 ```json
