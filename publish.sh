@@ -2,8 +2,6 @@
 
 git add .
 git commit -m "$1"
-if test $?
-    git push origin master
-fi
+git push origin master
 
 exit 0
