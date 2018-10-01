@@ -1,14 +1,13 @@
 # Tagged Templates
 
-Parse template literals using functions.
-All string parts passed as array of strings as first argument of function and all $ values parts passed as subsequent arguements to the function.
+Parse template literals using functions. All string parts passed as array of strings as first argument of function and all $ values parts passed as subsequent arguements to the function.
 
 ```javascript
 function hello(name) {
-	console.log(`How are you ${name}`);
+    console.log(`How are you ${name}`);
 }
 
-hello`Michele` 
+hello`Michele`
 ```
 
 ```javascript
@@ -39,3 +38,4 @@ var output = myTag`That ${ person } is a ${ age }`;
 console.log(output);
 // That Mike is a youngster
 ```
+
