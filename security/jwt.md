@@ -34,7 +34,9 @@ The above has:
         secret)
 ```
 
-The algorithm specified in the Header is used for the Signature part. Signature makes sure that data hasn't been modified.
+The algorithm specified in the Header is used for the Signature part. Signature makes sure that data hasn't been modified. The server uses the same algo to recalculate the Signature part and if it doesn't match the one received the data is deemed as modified. 
+
+So if an attacker wants to tamper the data, he will have to guess the secret to send the valid Signature. If RS256 signature is used, he will need both Private and Public keys.
 
 Really useful debugging tool at: [https://jwt.io/\#debugger](https://jwt.io/#debugger)
 
