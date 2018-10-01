@@ -24,6 +24,7 @@ But if the bullet point starts to grow too large, it should moved to a file of i
         }
     }
   ```
+  
   The above code will always return true because of finally. Read the discussion [here][1]
 
 
