@@ -40,3 +40,11 @@ The algorithm specified in the Header is used for the Signature part.
 Signature makes sure that data hasn't been modified.
 
 Really useful debugging tool at: https://jwt.io/#debugger
+
+Don't keep any sensitive info here, only enough to identify the user. No anything like isAdmin, password, etc
+
+## Benerfits over cookies?
+1. Enables CORS
+2. No need to maintain session state on a single server. All servers that use same secret can use JWT and identify the user.
+3. Prevents CSRF
+4. Performance is better since dont have to go to DB and deserialize the session.

@@ -4,5 +4,6 @@
 * [Random Ideas](randomIdeas/README.md)
 * [JavaScript](js/README.md)
     * [Tagged Templates](js/taggedTemplates.md)
-* [Security](security/jwt)
+* [Security](security/README.md)
+    * [JWT](security/jwt.md)
 
