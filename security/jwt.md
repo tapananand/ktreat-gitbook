@@ -1,6 +1,7 @@
 # JSON Web Tokens
 
 Can be used to identify users - like session Management.
+Created and sent by the server and then used for further communication by adding it in the Authentication Header
 
 Has three parts: `xxxxx.yyyyy.zzzzz`
 
