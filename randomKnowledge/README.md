@@ -27,6 +27,9 @@ function example() {
 
 The above code will always return true because of finally. Read the discussion [here][1].
 
+- Good to read: [Promises Finally...][2]
+
 
 
 [1]: https://stackoverflow.com/a/3838130/2407962
+[2]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/finally
