@@ -56,6 +56,10 @@ where, `cov_2mofekog2n.f[0]++` indicates that the function foo was executed, `co
   
   In Actor Model, any shared resource is owned by another Actor called managing Actor and everyone else calls this Actor if it wants to do anything to shared resource. Since the managing actor is single threaded, no need for semaphores, etc. Main thread is the managing actor for DOM on the web.
 
+- [Transcrypt][7] is a project that allows you to transpile a subset of python code to js and run on the browser.
+- Brython and Skulpt are implementations of Python (compiler) in JS, so you can ship JS code and use them to compile and run Python code on the browser.
+- [Pyodide][8] CPython - Python interepreter written in C compiled to WASM.
+
 ## Server Side stuff
 - Microservices architecture, instead of a monolith service, deploy several small service independently, for example auth service, cab booking service, route determination service, etc, i.e. instead of a single code acontaining /auth, /rides, /routes, etc endpoints, different deployments handle each of these separately, in fact each may choose different technology stack, based on what fits best for that service.
 - A good beginner's [intro to graphql][5].
@@ -68,4 +72,6 @@ where, `cov_2mofekog2n.f[0]++` indicates that the function foo was executed, `co
 [4]: https://blog.npmjs.org/post/178487845610/rethinking-javascript-test-coverage
 [5]: https://medium.freecodecamp.org/a-beginners-guide-to-graphql-60e43b0a41f5
 [6]: https://dassur.ma/things/actormodel/
+[7]: https://www.transcrypt.org/docs/html/what_why.html
+[8]: https://github.com/iodide-project/pyodide
 
