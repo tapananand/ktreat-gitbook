@@ -64,6 +64,9 @@ where, `cov_2mofekog2n.f[0]++` indicates that the function foo was executed, `co
 - Microservices architecture, instead of a monolith service, deploy several small service independently, for example auth service, cab booking service, route determination service, etc, i.e. instead of a single code acontaining /auth, /rides, /routes, etc endpoints, different deployments handle each of these separately, in fact each may choose different technology stack, based on what fits best for that service.
 - A good beginner's [intro to graphql][5].
 
+## Misc
+- Base58 encoding is used to represent Wallet Addresses for Bitcoin. It removes O and 0, I and l which can look like the same character in most fonts. So, the resulting alphabet is: ***123456789ABCDEFGHJKLMNPQRSTUVWXYZabcdefghijkmnopqrstuvwxyz***
+
 
 
 [1]: https://stackoverflow.com/a/3838130/2407962
