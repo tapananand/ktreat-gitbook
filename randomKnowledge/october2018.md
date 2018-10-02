@@ -51,9 +51,10 @@ function foo(a) {
 }
 ```
 where, `cov_2mofekog2n.f[0]++` indicates that the function foo was executed, `cov_2mofekog2n.s[0]++` indicates that a statement within this function was called, and `cov_2mofekog2n.b[0][0]++` and `cov_2mofekog2n.b[0][1]++` indicate that branches were executed. Based on these counts, reports can be generated. But this is slow and can cause bugs. [This guy tried][4] using V8 to generate coverage reports instead.
--  A nice article on [Actor Model by DasSurma][6]. He tries to justify how the web along with WebWorkers implements an Actor Model. Actor model has actors. Actors are single threaded. But many actors can run at same time. Actor model allows running complex highly parallel apps. Actors can create actors (main thread which manages DOM creates another Actor - the Web Worker). 
-
-In Actor Model, any shared resource is owned by another Actor called managing Actor and everyone else calls this Actor if it wants to do anything to shared resource. Since the managing actor is single threaded, no need for semaphores, etc. Main thread is the managing actor for DOM on the web.
+-  ### Actor Model
+  A nice article on [Actor Model by DasSurma][6]. He tries to justify how the web along with WebWorkers implements an Actor Model. Actor model has actors. Actors are single threaded. But many actors can run at same time. Actor model allows running complex highly parallel apps. Actors can create actors (main thread which manages DOM creates another Actor - the Web Worker). 
+  
+  In Actor Model, any shared resource is owned by another Actor called managing Actor and everyone else calls this Actor if it wants to do anything to shared resource. Since the managing actor is single threaded, no need for semaphores, etc. Main thread is the managing actor for DOM on the web.
 
 ## Server Side stuff
 - Microservices architecture, instead of a monolith service, deploy several small service independently, for example auth service, cab booking service, route determination service, etc, i.e. instead of a single code acontaining /auth, /rides, /routes, etc endpoints, different deployments handle each of these separately, in fact each may choose different technology stack, based on what fits best for that service.
