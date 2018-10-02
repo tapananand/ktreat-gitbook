@@ -23,6 +23,35 @@ function example() {
 The above code will always return true because of finally. Read the discussion [here][1].
 
 - Good to read: [Promises Finally...][2]
+- ### How tools calculate coverage?
+By parsing the code and inserting increment statements in between. For example, this code:
+```javascript
+function foo (a) {
+  if (a) {
+  // do something with 'a'.
+  } else {
+  // do something else.
+  }
+}
+```
+Gets transformed to:
+```javascript
+function foo(a) {
+  cov_2mofekog2n.f[0]++;
+  cov_2mofekog2n.s[0]++;
+  if (a) {
+    // do something with 'a'.
+    cov_2mofekog2n.b[0][0]++;
+  } else {
+    // do something else.
+    cov_2mofekog2n.b[0][1]++;
+  }
+}
+```
+where, `cov_2mofekog2n.f[0]++` indicates that the function foo was executed, `cov_2mofekog2n.s[0]++` indicates that a statement within this function was called, and `cov_2mofekog2n.b[0][0]++` and `cov_2mofekog2n.b[0][1]++` indicate that branches were executed. Based on these counts, reports can be generated.
+
+## System Design
+- Microservices architecture, instead of a monolith service, deploy several small service independently, for example auth service, cab booking service, route determination service, etc, i.e. instead of a single code acontaining /auth, /rides, /routes, etc endpoints, different deployments handle each of these separately, in fact each may choose different technology stack, based on what fits best for that service.
 
 
 
