@@ -27,25 +27,25 @@ The above code will always return true because of finally. Read the discussion [
 By parsing the code and inserting increment statements in between. For example, this code:
 ```javascript
 function foo (a) {
-  if (a) {
-  // do something with 'a'.
-  } else {
-  // do something else.
-  }
+    if (a) {
+        // do something with 'a'.
+    } else {
+        // do something else.
+    }
 }
 ```
 Gets transformed to:
 ```javascript
 function foo(a) {
-  cov_2mofekog2n.f[0]++;
-  cov_2mofekog2n.s[0]++;
-  if (a) {
-    // do something with 'a'.
-    cov_2mofekog2n.b[0][0]++;
-  } else {
-    // do something else.
-    cov_2mofekog2n.b[0][1]++;
-  }
+    cov_2mofekog2n.f[0]++;
+    cov_2mofekog2n.s[0]++;
+    if (a) {
+        // do something with 'a'.
+        cov_2mofekog2n.b[0][0]++;
+    } else {
+        // do something else.
+        cov_2mofekog2n.b[0][1]++;
+    }
 }
 ```
 where, `cov_2mofekog2n.f[0]++` indicates that the function foo was executed, `cov_2mofekog2n.s[0]++` indicates that a statement within this function was called, and `cov_2mofekog2n.b[0][0]++` and `cov_2mofekog2n.b[0][1]++` indicate that branches were executed. Based on these counts, reports can be generated.
