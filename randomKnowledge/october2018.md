@@ -60,9 +60,11 @@ where, `cov_2mofekog2n.f[0]++` indicates that the function foo was executed, `co
 - Brython and Skulpt are implementations of Python (compiler) in JS, so you can ship JS code and use them to compile and run Python code on the browser.
 - [Pyodide][8] CPython - Python interepreter written in C compiled to WASM.
 - A very good [article][9] on Coroutines in JavaScript.
+- Immer - a library that allows writing reducers just like you would modify an object but the original state is never modified, so you don't have to create all that spread mess to take care of immutability. It follows a copy on write strategy. Take a look [here][10].
 
 ## Server Side stuff
 - Microservices architecture, instead of a monolith service, deploy several small service independently, for example auth service, cab booking service, route determination service, etc, i.e. instead of a single code acontaining /auth, /rides, /routes, etc endpoints, different deployments handle each of these separately, in fact each may choose different technology stack, based on what fits best for that service.
+- Serverless computing/architecture is basically - you don't have to manage servers manually by yourself, third party vendor like AWS will take care of it. You just provide it a function (a package with code to be run on some event) and it will automatically allocate resource for you to run that code and process the content. An example offering is AWS Lambdas. Read more here about [serverless computing][11].
 - A good beginner's [intro to graphql][5].
 
 ## Misc
@@ -79,4 +81,6 @@ where, `cov_2mofekog2n.f[0]++` indicates that the function foo was executed, `co
 [7]: https://www.transcrypt.org/docs/html/what_why.html
 [8]: https://github.com/iodide-project/pyodide
 [9]: https://x.st/javascript-coroutines/
+[10]: https://github.com/mweststrate/immer
+[11]: https://serverless-stack.com/chapters/what-is-serverless.html
 
