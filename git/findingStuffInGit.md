@@ -38,6 +38,7 @@ git bisect good <commit where it worked>
 ```
 
 The above checks you out on a commit in between, test the code and if:
+
 1. The bug is still there: `git bisect bad`
 2. The bug is not there: `git bisect good`
 
