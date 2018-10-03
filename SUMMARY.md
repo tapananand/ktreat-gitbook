@@ -5,6 +5,8 @@
   * [Tagged Templates](js/taggedtemplates.md)
 * [Security](security/README.md)
   * [JWT](security/jwt.md)
+* [Git](git/README.md)
+    * [Finding Stuff in Git](git/findingStuffInGit.md)
 * [Random Knowledge](randomKnowledge/README.md)
     * [October 2018](randomKnowledge/october2018.md)
 * [Random Ideas](randomIdeas/README.md)

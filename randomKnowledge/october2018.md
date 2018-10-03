@@ -59,6 +59,7 @@ where, `cov_2mofekog2n.f[0]++` indicates that the function foo was executed, `co
 - [Transcrypt][7] is a project that allows you to transpile a subset of python code to js and run on the browser.
 - Brython and Skulpt are implementations of Python (compiler) in JS, so you can ship JS code and use them to compile and run Python code on the browser.
 - [Pyodide][8] CPython - Python interepreter written in C compiled to WASM.
+- A very good [article][9] on Coroutines in JavaScript.
 
 ## Server Side stuff
 - Microservices architecture, instead of a monolith service, deploy several small service independently, for example auth service, cab booking service, route determination service, etc, i.e. instead of a single code acontaining /auth, /rides, /routes, etc endpoints, different deployments handle each of these separately, in fact each may choose different technology stack, based on what fits best for that service.
@@ -77,4 +78,5 @@ where, `cov_2mofekog2n.f[0]++` indicates that the function foo was executed, `co
 [6]: https://dassur.ma/things/actormodel/
 [7]: https://www.transcrypt.org/docs/html/what_why.html
 [8]: https://github.com/iodide-project/pyodide
+[9]: https://x.st/javascript-coroutines/
 
