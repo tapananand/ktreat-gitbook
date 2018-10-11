@@ -61,7 +61,7 @@ where, `cov_2mofekog2n.f[0]++` indicates that the function foo was executed, `co
 - [Pyodide][8] CPython - Python interepreter written in C compiled to WASM.
 - A very good [article][9] on Coroutines in JavaScript.
 - Immer - a library that allows writing reducers just like you would modify an object but the original state is never modified, so you don't have to create all that spread mess to take care of immutability. It follows a copy on write strategy. Take a look [here][10].
-- A nice approach to improving install times in Yarn without node_modules - [Yarn PlugNPlay](13).
+- A nice approach to improving install times in Yarn without node_modules - [Yarn PlugNPlay][13].
 - async/await is just syntactic sugar over promises and generators, translate `await` to `yield` and imagine async function being transalted to a generator function. Now, all it has to do is, do a `.then` on the promise given to `await` and inside then, it will just do `it.next(valueWithWhichThePromiseResolved)` and voila your `await` expression can be assigned to a variable.
 
 ## Security
@@ -79,7 +79,7 @@ where, `cov_2mofekog2n.f[0]++` indicates that the function foo was executed, `co
 
 ## Misc
 - Base58 encoding is used to represent Wallet Addresses for Bitcoin. It removes O and 0, I and l which can look like the same character in most fonts. So, the resulting alphabet is: ***123456789ABCDEFGHJKLMNPQRSTUVWXYZabcdefghijkmnopqrstuvwxyz***
-- Amazon Echo and Google Home use [Kaldi](14) - an open source speech recognition Toolkit.
+- Amazon Echo and Google Home use [Kaldi][14] - an open source speech recognition Toolkit.
 
 
 
