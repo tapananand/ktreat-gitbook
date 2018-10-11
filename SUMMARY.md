@@ -10,4 +10,7 @@
 * [Random Knowledge](randomKnowledge/README.md)
     * [October 2018](randomKnowledge/october2018.md)
 * [Random Ideas](randomIdeas/README.md)
+* [News](news/README.md)
+  * [2016](news/2016.md)
+  * [2018](news/2018.md)
 
