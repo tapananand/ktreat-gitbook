@@ -61,6 +61,8 @@ where, `cov_2mofekog2n.f[0]++` indicates that the function foo was executed, `co
 - [Pyodide][8] CPython - Python interepreter written in C compiled to WASM.
 - A very good [article][9] on Coroutines in JavaScript.
 - Immer - a library that allows writing reducers just like you would modify an object but the original state is never modified, so you don't have to create all that spread mess to take care of immutability. It follows a copy on write strategy. Take a look [here][10].
+- A nice approach to improving install times in Yarn without node_modules - [Yarn PlugNPlay](13).
+- async/await is just syntactic sugar over promises and generators, translate `await` to `yield` and imagine async function being transalted to a generator function. Now, all it has to do is, do a .then on the promise given to `await` and inside then, it will just do `it.next(valueWithWhichThePromiseResolved)` and voila your `await` expression can be assigned to a variable.
 
 ## Code Quality
 - VSCode has ctrl+shift+r that suggests some refatoring for the selected code snippet.
@@ -89,4 +91,5 @@ where, `cov_2mofekog2n.f[0]++` indicates that the function foo was executed, `co
 [10]: https://github.com/mweststrate/immer
 [11]: https://serverless-stack.com/chapters/what-is-serverless.html
 [12]: https://hackernoon.com/first-do-no-harm-30-principles-that-helped-me-avoid-fly-by-architecture-reviews-e8952ac632a
+[13]: https://github.com/yarnpkg/rfcs/files/2378943/Plugnplay.pdf
 
