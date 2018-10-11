@@ -65,7 +65,7 @@ where, `cov_2mofekog2n.f[0]++` indicates that the function foo was executed, `co
 - async/await is just syntactic sugar over promises and generators, translate `await` to `yield` and imagine async function being transalted to a generator function. Now, all it has to do is, do a `.then` on the promise given to `await` and inside then, it will just do `it.next(valueWithWhichThePromiseResolved)` and voila your `await` expression can be assigned to a variable.
 
 ## Security
-- [A nice read](15) on how Alexa and other Speech recognition systems can be made to listen something from a audio clip which us humans won't be able to listen, thus allowing an attack via say a TV commercial. For example, you can make Alexa hear turn off security camera while you are luistening to some news and you won't even get to know that that command was uttered to Alexa.
+- [A nice read][15] on how Alexa and other Speech recognition systems can be made to listen something from a audio clip which us humans won't be able to listen, thus allowing an attack via say a TV commercial. For example, you can make Alexa hear turn off security camera while you are luistening to some news and you won't even get to know that that command was uttered to Alexa.
 
 ## Code Quality
 - VSCode has ctrl+shift+r that suggests some refatoring for the selected code snippet.
