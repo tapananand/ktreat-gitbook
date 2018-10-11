@@ -62,7 +62,10 @@ where, `cov_2mofekog2n.f[0]++` indicates that the function foo was executed, `co
 - A very good [article][9] on Coroutines in JavaScript.
 - Immer - a library that allows writing reducers just like you would modify an object but the original state is never modified, so you don't have to create all that spread mess to take care of immutability. It follows a copy on write strategy. Take a look [here][10].
 - A nice approach to improving install times in Yarn without node_modules - [Yarn PlugNPlay](13).
-- async/await is just syntactic sugar over promises and generators, translate `await` to `yield` and imagine async function being transalted to a generator function. Now, all it has to do is, do a .then on the promise given to `await` and inside then, it will just do `it.next(valueWithWhichThePromiseResolved)` and voila your `await` expression can be assigned to a variable.
+- async/await is just syntactic sugar over promises and generators, translate `await` to `yield` and imagine async function being transalted to a generator function. Now, all it has to do is, do a `.then` on the promise given to `await` and inside then, it will just do `it.next(valueWithWhichThePromiseResolved)` and voila your `await` expression can be assigned to a variable.
+
+## Security
+- [A nice read](15) on how Alexa and other Speech recognition systems can be made to listen something from a audio clip which us humans won't be able to listen, thus allowing an attack via say a TV commercial. For example, you can make Alexa hear turn off security camera while you are luistening to some news and you won't even get to know that that command was uttered to Alexa.
 
 ## Code Quality
 - VSCode has ctrl+shift+r that suggests some refatoring for the selected code snippet.
@@ -76,6 +79,7 @@ where, `cov_2mofekog2n.f[0]++` indicates that the function foo was executed, `co
 
 ## Misc
 - Base58 encoding is used to represent Wallet Addresses for Bitcoin. It removes O and 0, I and l which can look like the same character in most fonts. So, the resulting alphabet is: ***123456789ABCDEFGHJKLMNPQRSTUVWXYZabcdefghijkmnopqrstuvwxyz***
+- Amazon Echo and Google Home use [Kaldi](14) - an open source speech recognition Toolkit.
 
 
 
@@ -92,4 +96,6 @@ where, `cov_2mofekog2n.f[0]++` indicates that the function foo was executed, `co
 [11]: https://serverless-stack.com/chapters/what-is-serverless.html
 [12]: https://hackernoon.com/first-do-no-harm-30-principles-that-helped-me-avoid-fly-by-architecture-reviews-e8952ac632a
 [13]: https://github.com/yarnpkg/rfcs/files/2378943/Plugnplay.pdf
+[14]: http://kaldi-asr.org/
+[15]: https://adversarial-attacks.net/
 
