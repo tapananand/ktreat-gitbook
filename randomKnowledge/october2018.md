@@ -4,6 +4,13 @@
 - In Git, since we can add any repository copy as a remote, it' so easy to collaborate. Linus certainly did help open source a great deal with this. And then there is Linux. Linus did some great job for open source.
 - In `git branch` and `git checkout -b` you can also specify the starting point: `git checkout -b newBranch develop`
 
+## Web
+- The Render Tree is formed by combining the DOM and the CSSOM. The render tree only contains visible nodes and is used to compute the layout of these visible nodes.  
+- JS parsing may have to wait for all CSS to be downloaded, since JS code may query/modify the CSSOM. So always have css on top of page => link tags inside head.
+- There is a source map spec at: https://sourcemaps.info/spec.html, a nice [article][16] that summarizes it.
+- We can send an HTTP header called `SourceMap: <url>` with each file to specify the sourcemap location instead of annotating it as a comment in the file. You can even host the sourcemap on a private location or even localhodst so that nobody else can access it but you can debug it when you run the code.
+- Ideally, Chrome tries to run every tab in a separate process, including cross origin iframes, but when less memory available or too many tabs it tries to group same origin tabs into same process. Creating different has the memory limitation that common stuff like the V8 engine have to be present as a copy in each process, hence the above optimization is required.
+
 ## JavaScript
 - Look at this:
 ```javascript
@@ -63,6 +70,7 @@ where, `cov_2mofekog2n.f[0]++` indicates that the function foo was executed, `co
 - Immer - a library that allows writing reducers just like you would modify an object but the original state is never modified, so you don't have to create all that spread mess to take care of immutability. It follows a copy on write strategy. Take a look [here][10].
 - A nice approach to improving install times in Yarn without node_modules - [Yarn PlugNPlay][13].
 - async/await is just syntactic sugar over promises and generators, translate `await` to `yield` and imagine async function being transalted to a generator function. Now, all it has to do is, do a `.then` on the promise given to `await` and inside then, it will just do `it.next(valueWithWhichThePromiseResolved)` and voila your `await` expression can be assigned to a variable.
+- In JS engines some part of the engine is self-hosted, i.e. written in the same language itself, i.e. written in JS itself. Why? Because, say for functions that take JS callbacks, like forEach, sort, etc, if it was implemented in C++, then there would be context switches between the C++ world and the interpreted JS world to call the callback. These context switches are slow, hence self-hosted instead.
 
 ## Security
 - [A nice read][15] on how Alexa and other Speech recognition systems can be made to listen something from a audio clip which us humans won't be able to listen, thus allowing an attack via say a TV commercial. For example, you can make Alexa hear turn off security camera while you are luistening to some news and you won't even get to know that that command was uttered to Alexa.
@@ -98,4 +106,5 @@ where, `cov_2mofekog2n.f[0]++` indicates that the function foo was executed, `co
 [13]: https://github.com/yarnpkg/rfcs/files/2378943/Plugnplay.pdf
 [14]: http://kaldi-asr.org/
 [15]: https://adversarial-attacks.net/
+[16]: https://medium.com/@trungutt/yet-another-explanation-on-sourcemap-669797e418ce
 

@@ -49,3 +49,4 @@ Don't keep any sensitive info here, only enough to identify the user. No anythin
 3. Prevents CSRF
 4. Performance is better since don't have to go to DB and deserialise the session.
 
+[A good article](http://cryto.net/~joepie91/blog/2016/06/13/stop-using-jwt-for-sessions/) on JWTs why they are bad and where they are useful.
