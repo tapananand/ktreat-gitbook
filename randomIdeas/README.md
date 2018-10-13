@@ -6,10 +6,12 @@ Some random Ideas/thoughts that I have and are worth sharing will be listed unde
 - Some good Web Tech history in [this article][1]. Must read.
 - Tony Hoare created QuickSort and null reference. He calls null reference a Billion Dollar Mistake [now][2].
 - [This[3]] is a website with servers powered using solar energy.
+- A Cool! [tool for using git][4].
 
 
 
 [1]: https://dev.to/stereobooster/thats-one-small-step-for-a-developer-one-giant-leap-for-the-web-4b28?utm_source=Newsletter+Subscribers&utm_campaign=63b22361fd-EMAIL_CAMPAIGN_2018_09_24_18&utm_medium=email&utm_term=0_d8f11d5d1e-63b22361fd-154641825
 [2]: https://www.infoq.com/presentations/Null-References-The-Billion-Dollar-Mistake-Tony-Hoare
 [3]: https://solar.lowtechmagazine.com/2018/09/how-to-build-a-lowtech-website/?utm_source=hackernewsletter&utm_medium=email&utm_term=fav
+[4]: https://github.com/jesseduffield/lazygit
 

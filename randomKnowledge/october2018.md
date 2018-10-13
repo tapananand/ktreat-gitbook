@@ -10,6 +10,7 @@
 - There is a source map spec at: https://sourcemaps.info/spec.html, a nice [article][16] that summarizes it.
 - We can send an HTTP header called `SourceMap: <url>` with each file to specify the sourcemap location instead of annotating it as a comment in the file. You can even host the sourcemap on a private location or even localhodst so that nobody else can access it but you can debug it when you run the code.
 - Ideally, Chrome tries to run every tab in a separate process, including cross origin iframes, but when less memory available or too many tabs it tries to group same origin tabs into same process. Creating different has the memory limitation that common stuff like the V8 engine have to be present as a copy in each process, hence the above optimization is required.
+- [WorkerDOM][17] making DOM APIs available in web worker.
 
 ## JavaScript
 - Look at this:
@@ -107,4 +108,5 @@ where, `cov_2mofekog2n.f[0]++` indicates that the function foo was executed, `co
 [14]: http://kaldi-asr.org/
 [15]: https://adversarial-attacks.net/
 [16]: https://medium.com/@trungutt/yet-another-explanation-on-sourcemap-669797e418ce
+[17]: https://amphtml.wordpress.com/2018/08/21/workerdom/
 
