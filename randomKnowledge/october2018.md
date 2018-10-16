@@ -72,6 +72,7 @@ where, `cov_2mofekog2n.f[0]++` indicates that the function foo was executed, `co
 - A nice approach to improving install times in Yarn without node_modules - [Yarn PlugNPlay][13].
 - async/await is just syntactic sugar over promises and generators, translate `await` to `yield` and imagine async function being transalted to a generator function. Now, all it has to do is, do a `.then` on the promise given to `await` and inside then, it will just do `it.next(valueWithWhichThePromiseResolved)` and voila your `await` expression can be assigned to a variable.
 - In JS engines some part of the engine is self-hosted, i.e. written in the same language itself, i.e. written in JS itself. Why? Because, say for functions that take JS callbacks, like forEach, sort, etc, if it was implemented in C++, then there would be context switches between the C++ world and the interpreted JS world to call the callback. These context switches are slow, hence self-hosted instead.
+- The body of an ES6 class declaration is run in strict mode.
 
 ## Security
 - [A nice read][15] on how Alexa and other Speech recognition systems can be made to listen something from a audio clip which us humans won't be able to listen, thus allowing an attack via say a TV commercial. For example, you can make Alexa hear turn off security camera while you are luistening to some news and you won't even get to know that that command was uttered to Alexa.
